@@ -1,0 +1,25 @@
+import static java.lang.Math.pow;
+import java.util.Scanner;
+
+/**
+ *
+ * @author CJ Suracle
+ */
+public class Calculo_del_IMC_usando_metodos {
+
+    public static void main(String[] args) {
+                 Scanner ent= new Scanner(System.in);
+                 
+                 System.out.println("Ingrese su peso en kilogramos: ");
+                 double peso = ent.nextDouble();
+                 
+                 System.out.println("Ingrese su estatura en metros: ");
+                 double estatura = ent.nextDouble();
+                 
+                 double IMC = peso/Math.pow(estatura, 2) ;
+                        System.out.println("Tu IMC es: "+IMC);
+    }
+    public static double IMC(double estatura,double peso) {
+    return peso /Math.pow(estatura, 2);
+   }
+}
